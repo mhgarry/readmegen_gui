@@ -18,7 +18,7 @@ const renderLicenseSection = (data) => {
     return getLicenseBadge(data.license);
 };
   // Function to generate markdown for README
-const generate = (data) => {
+const generateFile = (data) => {
     return `# ${data.title}
 ## Table of contents
 
@@ -71,4 +71,4 @@ To view and clone this project's repository as well as view other projects I'm w
 `;;
 }
 
-module.exports = generateMarkdown;
+module.exports = generateFile;

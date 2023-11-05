@@ -11,7 +11,7 @@
 // when questions are over make download link appear so the user can download their README.md file
 import inquirer from 'inquirer';
 import { questions } from './questions';
-import { generate } from './generate';
+import { generateFile } from './generate';
 
 const writeReadme = (filename, data) => {
     fs.writeFile(filename, data, (error) => {
@@ -24,7 +24,7 @@ const writeReadme = (filename, data) => {
 
 const runIt = () => { inquirer.prompt(questions)
 .then((userData) => {console.log(userData)
-    writeReadme("README.md", generate(userData));
+    writeReadme("README.md", generateFile(userData));
 });
 };
 
