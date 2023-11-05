@@ -10,8 +10,9 @@
 // create submit answer button that communicates with the server and gives it the answer to the particular question to write on the README.md file
 // when questions are over make download link appear so the user can download their README.md file
 import inquirer from 'inquirer';
-import { questions } from './questions';
-import { generateFile } from './generate';
+import fs from 'fs';
+import  questions  from './questions.js';
+import  generateFile  from './generate.js';
 
 const writeReadme = (filename, data) => {
     fs.writeFile(filename, data, (error) => {

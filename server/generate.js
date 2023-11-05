@@ -71,4 +71,4 @@ To view and clone this project's repository as well as view other projects I'm w
 `;;
 }
 
-module.exports = generateFile;
+export default generateFile;
