@@ -1,5 +1,8 @@
-import { Router as router } from express;
+import express from 'express';
+import { Router } from 'express';
 import questions from '../prompts/questions.js';
+
+const router = Router();
 
 let currentIndex = 0; //create index to cycle through prompts on frontend 
 
