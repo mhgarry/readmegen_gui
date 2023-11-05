@@ -1,6 +1,4 @@
-// generate our markdown file on backend based on the input from frontend
-// create a way to generate and append badges to readme for licensing
-// create a function that writes the README.md file for the user after they're done answering their questions
+// connect frontend answers to write into backend README file
 // serve the markdown file to the user to directly download to their computer
 
 // use React, axios, and ???
