@@ -21,10 +21,13 @@ const writeReadme = (filename, data) => {
     });
 };
 
-const runIt = () => { inquirer.prompt(questions)
-.then((userData) => {console.log(userData)
-    writeReadme("README.md", generateFile(userData));
-});
+const runIt = async() => {
+    const userData = await inquirer.prompt(questions);
+    console.log(userData);
+    writeReadme('README.md', generateFile(userData));
+    return userData;
 };
 
-runIt();
+
+
+export default { runIt };
